@@ -1,0 +1,28 @@
+ <resources>
+    <string name="app_name">Bloc-notes</string>
+    <string name="title_activity_notepad_list">Bloc-notes</string>
+    <!-- &#8230; stands for "..." -->
+    <string name="titleEditNote">Editer note</string> 
+    <string name="menu_insert">Créer note</string>
+    <string name="newNote">Créer note</string>
+    <string name="saveNote">Sauvegarder</string>
+    <string name="sampleItem">Elément de l\'échantillon</string>
+    <string name="deleteNote">Supprimer</string>
+    <string name="revertChanges">Annuler changement</string>
+    <string name="listEmpty">La liste est vide</string>
+    <string name="share">Partager</string>
+    <string name="newPaste">Coller depuis le presse-papiers</string>
+    <string name="contextEdit">Editer note</string>
+    <string name="contextDelete">Supprimer</string>
+    <string name="contextDuplicate">Dupliquer</string>
+    <string name="dialogDeleteNote">Supprimer note?</string>
+    <string name="dialogRevertChanges">Annuler tous les changements depuis la dernière sauvegarde?</string>
+    <string name="dialogDeleteSelected">Supprimer la note sélectionner?</string>
+	<string name="toastAlreadyPasted">Une note avec ce contenu a déjà été collée</string>
+	<string name="toastClipboardNotText">Les données du presse-papiers ne sont pas au format texte</string>
+	<string name="toastClipboardEmpty">Le presse-papiers est vide</string>
+	<string name="shareEntityName">Note</string>
+	<string name="sharePromptText">Partager la note</string>
+	<string name="toastNoteDeleted">Note supprimée</string>
+	<string name="toastNoteSaved">Note sauvegardée!</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <dimen name="itemTextSize">25sp</dimen>
+    <dimen name="notelistItemMargin">3dip</dimen>
+    <dimen name="note_tile_margin">5dip</dimen>
+    <dimen name="note_tile_margin_sides">5dip</dimen>
+    <dimen name="tile_padding">5dp</dimen>
+</resources>

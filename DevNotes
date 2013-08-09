@@ -1,0 +1,12 @@
+Dev notes
+* add long click support		DONE
+* add paste button				DONE
+* add cloud backup storage
+* dictate new note
+* support unicode characters (TM)
+* fix crash: share note in landscape, rotate screen, go back	DONE?
+* add copy note to clipboard
+* support for SDK from 10
+* nicer list elements
+* fix backup manager
+* bigger buffer

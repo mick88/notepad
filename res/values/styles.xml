@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        
+    </style>
+    
+    <style name="btn_tile_option">
+        <item name="android:background">@drawable/click_selector</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    
+    <style name="dialog" parent="@style/Theme.Sherlock.Light.Dialog"></style>
+
+</resources>

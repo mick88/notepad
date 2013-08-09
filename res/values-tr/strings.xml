@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Not Defteri</string>
+    <string name="title_activity_notepad_list">Not Defteri</string>
+    <!-- &#8230; stands for "..." -->
+    <string name="titleEditNote">Notu düzenle&#8230;</string> 
+    <string name="menu_insert">Not oluştur</string>
+    <string name="newNote">Not oluştur</string>
+    <string name="saveNote">Kaydet</string>
+    <string name="sampleItem">Örnek parça</string>
+    <string name="deleteNote">Sil</string>
+    <string name="revertChanges">Değişiklikleri geri al</string>
+    <string name="listEmpty">Liste boş</string>
+    <string name="share">Paylaş</string>
+    <string name="newPaste">Panodan yapıştır</string>
+    <string name="contextEdit">Notu düzenle</string>
+    <string name="contextDelete">Sil</string>
+    <string name="contextDuplicate">Çoğalt</string>
+    <string name="dialogDeleteNote">Notu sil?</string>
+    <string name="dialogRevertChanges">Son kaydettiğinizden sonraki değişiklikler geri alınsınmı?</string>
+    <string name="dialogDeleteSelected">Seçilen notları sil?</string>
+	<string name="toastAlreadyPasted">Bu içeriğe sahip not zaten yapıştırıldı</string>
+	<string name="toastClipboardNotText">Pano verileri yazı formatında değil</string>
+	<string name="toastClipboardEmpty">Pano boş</string>
+	<string name="shareEntityName">Not</string>
+	<string name="sharePromptText">Notu paylaş</string>
+	<string name="toastNoteDeleted">Not silindi</string>
+	<string name="toastNoteSaved">Not kaydedildi!</string>
+</resources>

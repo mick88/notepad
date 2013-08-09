@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Notatnik</string>
+    <string name="title_activity_notepad_list">Notatnik</string>
+    <string name="titleEditNote">Edycja&#8230;</string>
+    <string name="menu_insert">Utwórz notatkę</string>
+    <string name="newNote">Nowa notatka</string>
+    <string name="saveNote">Zapisz</string>
+    <string name="sampleItem">Przykładowy wpis</string>
+    <string name="deleteNote">Usuń</string>
+    <string name="revertChanges">Anuluj zmiany</string>
+    <string name="listEmpty">Lista jest pusta</string>
+    <string name="share">Wyślij</string>
+    <string name="newPaste">Wklej ze schowka</string>
+    <string name="contextEdit">Edytuj</string>
+    <string name="contextDelete">Usuń notatkę</string>
+    <string name="contextDuplicate">Utwórz kopię</string>
+    <string name="dialogDeleteNote">Usunąć notatkę?</string>
+    <string name="dialogRevertChanges">Anulować zmiany od ostatniego zapisu?</string>
+	<string name="dialogDeleteSelected">Usunąć wybraną notatkę?</string>
+	<string name="toastAlreadyPasted">Notatka o tej treści już istnieje</string>
+	<string name="toastClipboardNotText">Dane w schowku nie są w formacie tekstowym!</string>
+	<string name="toastClipboardEmpty">Schowek jest pusty!</string>
+	<string name="shareEntityName">Notatka</string>
+	<string name="sharePromptText">Wyślij notatkę</string>
+	<string name="toastNoteDeleted">Notatka usunięta</string>
+	<string name="toastNoteSaved">Notatka zapisana!</string>
+</resources>

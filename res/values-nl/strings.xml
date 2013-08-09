@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Notitieblok</string>
+    <string name="title_activity_notepad_list">Notitieblok</string>
+    <!-- &#8230; stands for "..." -->
+    <string name="titleEditNote">Bewerk notitie&#8230;</string> 
+    <string name="menu_insert">Maak een notitie</string>
+    <string name="newNote">Maak een notitie</string>
+    <string name="saveNote">Opslaan</string>
+    <string name="sampleItem">Voorbeeld</string>
+    <string name="deleteNote">Verwijder</string>
+    <string name="revertChanges">Verwijderen ongedaan maken</string>
+    <string name="listEmpty">Lijst is leeg</string>
+    <string name="share">Deel</string>
+    <string name="newPaste">Plakken van klipbord</string>
+    <string name="contextEdit">Bewerk notitie</string>
+    <string name="contextDelete">Verwijder</string>
+    <string name="contextDuplicate">Dupliceer</string>
+    <string name="dialogDeleteNote">Verwijder notitie?</string>
+    <string name="dialogRevertChanges">Alles ongedaan maken?</string>
+    <string name="dialogDeleteSelected">Geselecteerde notitie verwijderen?</string>
+	<string name="toastAlreadyPasted">Notitie met deze inhoud is al gekopieerd</string>
+	<string name="toastClipboardNotText">Klipbord data is niet in tekst formaat</string>
+	<string name="toastClipboardEmpty">Klipbord is leeg</string>
+	<string name="shareEntityName">Notitie</string>
+	<string name="sharePromptText">Deel notitie</string>
+	<string name="toastNoteDeleted">Notitie verwijderd</string>
+	<string name="toastNoteSaved">Notitie opgeslaan!</string>
+</resources>

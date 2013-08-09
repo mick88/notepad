@@ -1,0 +1,9 @@
+TODO:
+- Settings: font size/tap to expand/num. lines in expanded/collapsed view
+- show links
+- initial note with explaination
+- sort notes by date/tie
+- tap anyplace on the right to expand
+- hold 'share' to share as a textfile
+- widget - widget selector just as a list of notes
+- show toast when an action is performed on a note

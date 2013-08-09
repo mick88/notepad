@@ -1,0 +1,28 @@
+<resources>
+	<string name="app_name">Notepad</string>
+	<string name="title_activity_notepad_list">Notepad</string>
+	<!--  &#8230; stands for "..."  -->
+	<string name="titleEditNote">Uredite nota…</string>
+	<string name="menu_insert">Stvorite nota</string>
+	<string name="newNote">Stvorite nota</string>
+	<string name="saveNote">Sačuvajte nota</string>
+	<string name="sampleItem">Primjer stavka</string>
+	<string name="deleteNote">Izbrisi nota</string>
+	<string name="revertChanges">Vratite promjenu</string>
+	<string name="listEmpty">Lista je prazna</string>
+	<string name="share">Dijelite</string>
+	<string name="newPaste">Stvori iz Clipboard</string>
+	<string name="contextEdit">Uredite</string>
+	<string name="contextDelete">Izbrisi</string>
+	<string name="contextDuplicate">Duplikuj</string>
+	<string name="dialogDeleteNote">Hoces izbrisat nota?</string>
+	<string name="dialogRevertChanges">Vratite svu promjenu od prijašnji sačuvaja?</string>
+	<string name="dialogDeleteSelected">Hoces izbrisat odabran nota?</string>
+	<string name="toastAlreadyPasted">Ovaj sadržaj je već stvorit</string>
+	<string name="toastClipboardNotText">Clipboard podaci nisu tekst</string>
+	<string name="toastClipboardEmpty">Clipboard je prazan</string>
+	<string name="shareEntityName">Nota</string>
+	<string name="sharePromptText">Dijelite nota</string>
+	<string name="toastNoteDeleted">Nota izbrisan</string>
+	<string name="toastNoteSaved">Nota je sačuvata!</string>
+</resources>
