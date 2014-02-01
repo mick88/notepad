@@ -536,7 +536,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 
 	public void loadNotes()
 	{
-		NoteAdapter noteAdapter = new NoteAdapter(this, noteManager.getAllNotes());
+		NoteAdapter noteAdapter = new NoteAdapter(this, noteManager);
 		ListView listView = (ListView) findViewById(R.id.listNotes);
 		listView.setAdapter(noteAdapter);
 	}

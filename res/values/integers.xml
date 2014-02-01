@@ -2,4 +2,5 @@
 <resources>
     <integer name="maxLinesInListItem">1</integer>
     <integer name="max_tile_lines">3</integer>
+    <integer name="max_tile_lines_expanded">9</integer>
 </resources>
