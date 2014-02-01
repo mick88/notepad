@@ -1,4 +1,4 @@
-package com.mick88.notepad.screens;
+package com.mick88.notepad.note_list;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +37,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ApplicationNotepad;
 import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.ConfirmationDialog.ConfirmationDialogListener;
+import com.mick88.notepad.note_edit.NoteEdit;
 import com.mick88.notepad.notes.Note;
 import com.mick88.notepad.notes.NoteManager;
 import com.mick88.notepad.R;

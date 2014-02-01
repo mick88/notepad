@@ -16,8 +16,8 @@ import android.text.TextUtils;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ApplicationNotepad;
-import com.mick88.notepad.PopupLinkList;
-import com.mick88.notepad.PopupLinkList.LinkListener;
+import com.mick88.notepad.note_list.PopupLinkList;
+import com.mick88.notepad.note_list.PopupLinkList.LinkListener;
 import com.mick88.notepad.R;
 
 /**

@@ -1,4 +1,4 @@
-package com.mick88.notepad.screens;
+package com.mick88.notepad.note_edit;
 
 import java.lang.reflect.Field;
 

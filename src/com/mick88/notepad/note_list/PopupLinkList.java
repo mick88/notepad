@@ -1,4 +1,4 @@
-package com.mick88.notepad;
+package com.mick88.notepad.note_list;
 
 import java.util.ArrayList;
 import java.util.List;
