@@ -30,6 +30,7 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -175,7 +176,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 		tileAnimation.setFillAfter(true);
 		
 		findViewById(R.id.emptyNotifier).setVisibility(View.GONE);
-		addTile(note, (ViewGroup)findViewById(R.id.tile_container), (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE), tileAnimation);
+//		addTile(note, (ViewGroup)findViewById(R.id.tile_container), (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE), tileAnimation);
 		selectNote(note);
 	}
 	
@@ -208,7 +209,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 					
 					public void run()
 					{
-						ViewGroup parent = (ViewGroup) findViewById(R.id.tile_container);
+						ViewGroup parent = (ViewGroup) findViewById(R.id.listNotes);
 						parent.removeView(tile);
 						if (parent.getChildCount() == 0)
 						{
@@ -292,7 +293,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 	public void populateNoteTiles()
 	{
 		TextView tvEmpty = (TextView) findViewById(R.id.emptyNotifier);
-		ViewGroup parent = (ViewGroup) findViewById(R.id.tile_container);
+		ViewGroup parent = (ViewGroup) findViewById(R.id.listNotes);
 		noteTiles.clear();
 		parent.removeAllViews();
 		selectedNote=null;
@@ -535,7 +536,9 @@ public class NotepadList extends SherlockFragmentActivity implements
 
 	public void loadNotes()
 	{
-		populateNoteTiles();
+		NoteAdapter noteAdapter = new NoteAdapter(this, noteManager.getAllNotes());
+		ListView listView = (ListView) findViewById(R.id.listNotes);
+		listView.setAdapter(noteAdapter);
 	}
 
 	@Override

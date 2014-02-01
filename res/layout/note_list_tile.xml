@@ -40,7 +40,6 @@
                 android:id="@+id/btn_tile_expand"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:layout_above="@+id/tile_options"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/click_selector"

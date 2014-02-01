@@ -5,27 +5,16 @@
     android:animateLayoutChanges="false"
     android:background="@color/background" >
 
-    <ScrollView 
-        android:id="@+id/scroll_tile_container"
-        android:padding="0dp"
-        android:layout_margin="0dp"
+    <ListView
+        android:id="@+id/listNotes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        
-        >
-        <LinearLayout
-            android:id="@+id/tile_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-           <!--  <include layout="@layout/note_list_tile"/>
-            <include layout="@layout/note_list_tile"/>
-            <include layout="@layout/note_list_tile"/> -->
-        </LinearLayout>
-        
-    </ScrollView>
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:divider="@null"
+        tools:listitem="@layout/note_list_tile" />
 
     <TextView
         android:id="@+id/emptyNotifier"
