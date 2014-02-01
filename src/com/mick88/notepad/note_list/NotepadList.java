@@ -51,9 +51,6 @@ public class NotepadList extends SherlockFragmentActivity implements
 
 	Note selectedNote = null;
 	HashMap<Note, View> noteTiles = new HashMap<Note, View>();
-	
-//	private GestureDetector gestureDetector = null;
-
 	final int DIALOG_DELETE = 1, NOTE_EDIT = 2;
 
 	@Override
@@ -64,30 +61,6 @@ public class NotepadList extends SherlockFragmentActivity implements
 		setContentView(R.layout.activity_notepad_tiles);
 		application = (NotepadApplication) this.getApplication();
 		noteManager = application.getNoteManager();
-
-		/*if (viewStyle == ViewStyle.List)
-		{
-			listViewNotes = (ListView) findViewById(R.id.list);
-			listViewNotes.setOnItemClickListener(new OnItemClickListener()
-			{
-
-				public void onItemClick(AdapterView<?> aa, View view, int pos,
-						long id)
-				{
-					if (id < noteManager.getNumNotes())
-					{
-						openNote((int) id);
-					} else
-					{
-						loadNotes();
-					}
-
-				}
-			});
-			registerForContextMenu(listViewNotes);
-		}*/
-		
-//		gestureDetector=new GestureDetector(getApplicationContext(), this);
 
 		noteManager.loadNotes();
 		loadNotes();
@@ -158,28 +131,6 @@ public class NotepadList extends SherlockFragmentActivity implements
 		return super.onContextItemSelected(item);
 	}
 
-/*	@Deprecated
-	public void populateNoteList()
-	{
-		ArrayList<String> items = new ArrayList<String>();
-		TextView tvEmpty = (TextView) findViewById(R.id.emptyNotifier);
-
-		if (noteManager.isEmpty() == true)
-		{
-			tvEmpty.setVisibility(View.VISIBLE);
-		} else
-		{
-			items = (ArrayList<String>) noteManager.getNotes();
-			tvEmpty.setVisibility(View.GONE);
-		}
-
-		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-				R.layout.note_list_element, R.id.noteTitle, items);
-		// ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-		// R.layout.note_list_tile, R.id.noteTitle, items);
-		listViewNotes.setAdapter(arrayAdapter);
-	}*/
-
 	void collapseNote(Note note)
 	{
 		View v = noteTiles.get(note);
@@ -196,11 +147,6 @@ public class NotepadList extends SherlockFragmentActivity implements
 		tile.findViewById(R.id.tile_options).setVisibility(View.VISIBLE);
 		((ImageView)tile.findViewById(R.id.btn_tile_menu)).setImageResource(R.drawable.icon_dark_collapse);
 		((TextView) tile.findViewById(R.id.noteTitle)).setMaxLines(9);
-		
-/*		ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_tile_container);
-		tile.computeScroll();
-		scrollView.scrollTo(0, tile.getTop());*/
-		// TODO: Scroll down to the selected tile
 	}
 	
 	/**
