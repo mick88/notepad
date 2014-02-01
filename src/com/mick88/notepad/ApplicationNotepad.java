@@ -1,6 +1,7 @@
 package com.mick88.notepad;
 
-import notes.NoteManager;
+import com.mick88.notepad.notes.NoteManager;
+
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;

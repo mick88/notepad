@@ -1,9 +1,7 @@
-package screens;
+package com.mick88.notepad.screens;
 
 import java.lang.reflect.Field;
 
-import notes.Note;
-import notes.NoteManager;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.os.Build;
@@ -18,6 +16,8 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ApplicationNotepad;
 import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.R;
+import com.mick88.notepad.notes.Note;
+import com.mick88.notepad.notes.NoteManager;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class NoteEdit extends SherlockFragmentActivity implements ConfirmationDialog.ConfirmationDialogListener

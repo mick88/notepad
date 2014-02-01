@@ -1,4 +1,4 @@
-package widget;
+package com.mick88.notepad.widget;
 
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;

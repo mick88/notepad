@@ -1,12 +1,10 @@
-package screens;
+package com.mick88.notepad.screens;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import notes.Note;
-import notes.NoteManager;
 import android.annotation.TargetApi;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -39,6 +37,8 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ApplicationNotepad;
 import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.ConfirmationDialog.ConfirmationDialogListener;
+import com.mick88.notepad.notes.Note;
+import com.mick88.notepad.notes.NoteManager;
 import com.mick88.notepad.R;
 
 public class NotepadList extends SherlockFragmentActivity implements

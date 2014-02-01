@@ -16,7 +16,7 @@
         android:allowBackup="true"
         android:allowClearUserData="true">
         <activity
-            android:name="screens.NotepadList"
+            android:name="com.mick88.notepad.screens.NotepadList"
             android:label="@string/title_activity_notepad_list"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme"
@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="screens.NoteEdit"
+            android:name="com.mick88.notepad.screens.NoteEdit"
             android:label="@string/titleEditNote" 
             android:windowSoftInputMode="stateVisible"
             android:configChanges="keyboard|keyboardHidden|orientation"

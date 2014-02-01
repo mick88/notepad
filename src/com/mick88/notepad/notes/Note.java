@@ -1,7 +1,7 @@
 /**
  * 
  */
-package notes;
+package com.mick88.notepad.notes;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

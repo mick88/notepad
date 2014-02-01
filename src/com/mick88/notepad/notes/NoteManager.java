@@ -1,4 +1,4 @@
-package notes;
+package com.mick88.notepad.notes;
 
 import java.io.IOException;
 import java.util.ArrayList;
