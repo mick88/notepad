@@ -15,7 +15,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.mick88.notepad.ApplicationNotepad;
+import com.mick88.notepad.NotepadApplication;
 import com.mick88.notepad.note_list.PopupLinkList;
 import com.mick88.notepad.note_list.PopupLinkList.LinkListener;
 import com.mick88.notepad.R;
@@ -139,13 +139,13 @@ public class Note
 		{
 			public void onLinkClicked(String url)
 			{
-				((ApplicationNotepad)activity.getApplication()).openLink(url);
+				((NotepadApplication)activity.getApplication()).openLink(url);
 			}
 		});
 		dialog.show(activity.getSupportFragmentManager(), "Link selector");
 	}
 
-	public void copyToClipboard(ApplicationNotepad application)
+	public void copyToClipboard(NotepadApplication application)
 	{
 		/*android.text.ClipboardManager manager = (android.text.ClipboardManager) application
 				.getSystemService(Context.CLIPBOARD_SERVICE);
@@ -220,7 +220,7 @@ public class Note
 		return n;
 	}
 	
-	public static Note newFromClipboard(NoteManager noteManager, ApplicationNotepad application)
+	public static Note newFromClipboard(NoteManager noteManager, NotepadApplication application)
 	{
 		CharSequence string = application.getClipboardString();
 		if (string == null) return null;

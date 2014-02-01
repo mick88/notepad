@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import com.mick88.notepad.ApplicationNotepad;
+import com.mick88.notepad.NotepadApplication;
 
 import android.content.Context;
 
@@ -113,7 +113,7 @@ public class NoteManager
 		return generateFilename(0);
 	}
 	
-	public Note newFromClipboard(ApplicationNotepad application)
+	public Note newFromClipboard(NotepadApplication application)
 	{
 		Note note = Note.newFromClipboard(this, application);
 		if (note == null) return null;

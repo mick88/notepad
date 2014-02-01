@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.mick88.notepad.ApplicationNotepad;
+import com.mick88.notepad.NotepadApplication;
 import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.R;
 import com.mick88.notepad.notes.Note;
@@ -22,7 +22,7 @@ import com.mick88.notepad.notes.NoteManager;
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class NoteEdit extends SherlockFragmentActivity implements ConfirmationDialog.ConfirmationDialogListener
 {
-	ApplicationNotepad application;
+	NotepadApplication application;
 	Note currentNote;
 	NoteManager noteManager;
 	EditText textEdit;
@@ -36,7 +36,7 @@ public class NoteEdit extends SherlockFragmentActivity implements ConfirmationDi
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.note_edit);
-		application = (ApplicationNotepad) this.getApplication();
+		application = (NotepadApplication) this.getApplication();
 		noteManager = application.getNoteManager();
 		
 		int id = getIntent().getExtras().getInt("noteId");

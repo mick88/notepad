@@ -34,7 +34,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.mick88.notepad.ApplicationNotepad;
+import com.mick88.notepad.NotepadApplication;
 import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.ConfirmationDialog.ConfirmationDialogListener;
 import com.mick88.notepad.note_edit.NoteEdit;
@@ -47,7 +47,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 {
 
 	NoteManager noteManager = null;
-	ApplicationNotepad application;
+	NotepadApplication application;
 
 	Note selectedNote = null;
 	HashMap<Note, View> noteTiles = new HashMap<Note, View>();
@@ -62,7 +62,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_notepad_tiles);
-		application = (ApplicationNotepad) this.getApplication();
+		application = (NotepadApplication) this.getApplication();
 		noteManager = application.getNoteManager();
 
 		/*if (viewStyle == ViewStyle.List)

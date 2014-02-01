@@ -8,11 +8,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.TextUtils;
 
-public class ApplicationNotepad extends Application
+public class NotepadApplication extends Application
 {
 	NoteManager noteManager = null;
 	
-	public ApplicationNotepad() {
+	public NotepadApplication() {
 		// TODO Auto-generated constructor stub
 	}
 	
