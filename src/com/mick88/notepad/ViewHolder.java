@@ -7,12 +7,18 @@ import android.view.ViewGroup;
 public class ViewHolder
 {
 	final View root;
-	final SparseArray<View> views = new SparseArray<View>(3);
+	final SparseArray<View> views;
+	
+	public ViewHolder(View root, int cacheSize)
+	{
+		this.root = root;
+		this.views = new SparseArray<View>(cacheSize);
+		populateMapping(root);
+	}
 	
 	public ViewHolder(View root)
 	{
-		this.root = root;
-		populateMapping(root);
+		this(root, 5);
 	}
 	
 	private void populateMapping(View root)
