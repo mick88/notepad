@@ -9,10 +9,10 @@
         android:id="@+id/contextDelete"
         android:title="@string/contextDelete"
         android:orderInCategory="2"
-        android:icon="@+drawable/content_discard"></item>
+        android:icon="@drawable/content_discard"></item>
     <item
         android:id="@+id/contextDuplicate"
         android:title="@string/contextDuplicate"
         android:orderInCategory="3"
-        android:icon="@+drawable/content_copy"></item>
+        android:icon="@drawable/content_copy"></item>
 </menu>

@@ -5,11 +5,11 @@
         android:title="@string/newNote"
         android:orderInCategory="1"
         app:showAsAction="always"
-        android:icon="@+drawable/content_new"/>
+        android:icon="@drawable/content_new"/>
     <item
         android:id="@+id/pasteNote"
         android:title="@string/newPaste"
         app:showAsAction="ifRoom"
-        android:icon="@+drawable/content_paste"
+        android:icon="@drawable/content_paste"
         android:orderInCategory="2"/>
 </menu>
