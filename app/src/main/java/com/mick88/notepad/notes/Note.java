@@ -186,17 +186,18 @@ public class Note
 			String filename) throws IOException
 	{
 		FileInputStream inputFileStream = context.openFileInput(filename);
-		StringBuffer stringBuffer = new StringBuffer();
+		StringBuilder stringBuilder = new StringBuilder();
 		byte[] buffer = new byte[BUFFER_SIZE];
-		while (inputFileStream.read(buffer) > 0)
+        int len;
+		while ((len = inputFileStream.read(buffer)) > 0)
 		{
-			String line = new String(buffer);
-			stringBuffer.append(line);
+			String line = new String(buffer, 0, len);
+			stringBuilder.append(line);
 
 			buffer = new byte[Note.BUFFER_SIZE];
 		}
 
-		Note n = new Note(noteManager, stringBuffer.toString().trim());
+		Note n = new Note(noteManager, stringBuilder.toString().trim());
 		n.fileName = filename;
 
 		inputFileStream.close();
