@@ -1,10 +1,5 @@
 package com.mick88.notepad.note_list;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.annotation.TargetApi;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -34,15 +29,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.mick88.notepad.ConfirmationDialogFragment;
+import com.mick88.notepad.ConfirmationDialogFragment.ConfirmationDialogListener;
 import com.mick88.notepad.NotepadApplication;
-import com.mick88.notepad.ConfirmationDialog;
-import com.mick88.notepad.ConfirmationDialog.ConfirmationDialogListener;
-import com.mick88.notepad.note_edit.NoteEdit;
+import com.mick88.notepad.R;
+import com.mick88.notepad.note_edit.NoteEditActivity;
 import com.mick88.notepad.notes.Note;
 import com.mick88.notepad.notes.NoteManager;
-import com.mick88.notepad.R;
 
-public class NotepadList extends SherlockFragmentActivity implements
+import java.util.HashMap;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class NotepadListActivity extends SherlockFragmentActivity implements
 		ConfirmationDialogListener, OnGestureListener
 {
 
@@ -110,8 +110,8 @@ public class NotepadList extends SherlockFragmentActivity implements
 		switch (item.getItemId())
 		{
 		case R.id.contextDelete:
-			ConfirmationDialog dialog = ConfirmationDialog.newInstance(this,
-					getString(R.string.dialogDeleteSelected), DIALOG_DELETE);
+			ConfirmationDialogFragment dialog = ConfirmationDialogFragment.newInstance(this,
+                    getString(R.string.dialogDeleteSelected), DIALOG_DELETE);
 			Bundle b = new Bundle();
 			b.putInt("noteId", selectedNote.getID());
 			dialog.setArguments(b);
@@ -332,8 +332,8 @@ public class NotepadList extends SherlockFragmentActivity implements
 			
 			public void onClick(View v)
 			{
-				ConfirmationDialog dialog = ConfirmationDialog.newInstance(activity,
-						getString(R.string.dialogDeleteSelected), DIALOG_DELETE);
+				ConfirmationDialogFragment dialog = ConfirmationDialogFragment.newInstance(activity,
+                        getString(R.string.dialogDeleteSelected), DIALOG_DELETE);
 				Bundle b = new Bundle();
 				b.putInt("noteId", note.getID());
 				dialog.setArguments(b);
@@ -553,7 +553,7 @@ public class NotepadList extends SherlockFragmentActivity implements
 
 	void openNote(int noteId)
 	{
-		Intent intent = new Intent(this, NoteEdit.class);
+		Intent intent = new Intent(this, NoteEditActivity.class);
 		intent.putExtra("noteId", noteId);
 		intent.putExtra("noteText", noteManager.getNoteById(noteId).getText());
 		startActivityForResult(intent, NOTE_EDIT);

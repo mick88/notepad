@@ -1,7 +1,5 @@
 package com.mick88.notepad.note_edit;
 
-import java.lang.reflect.Field;
-
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.os.Build;
@@ -13,14 +11,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.mick88.notepad.ConfirmationDialogFragment;
 import com.mick88.notepad.NotepadApplication;
-import com.mick88.notepad.ConfirmationDialog;
 import com.mick88.notepad.R;
 import com.mick88.notepad.notes.Note;
 import com.mick88.notepad.notes.NoteManager;
 
+import java.lang.reflect.Field;
+
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class NoteEdit extends SherlockFragmentActivity implements ConfirmationDialog.ConfirmationDialogListener
+public class NoteEditActivity extends SherlockFragmentActivity implements ConfirmationDialogFragment.ConfirmationDialogListener
 {
 	NotepadApplication application;
 	Note currentNote;
@@ -141,11 +141,11 @@ public class NoteEdit extends SherlockFragmentActivity implements ConfirmationDi
 				saveCurrentNote();
 				break;
 			case R.id.deleteItem:
-				ConfirmationDialog dialog = ConfirmationDialog.newInstance(this, getString(R.string.dialogDeleteNote), DIALOG_DELETE);
+				ConfirmationDialogFragment dialog = ConfirmationDialogFragment.newInstance(this, getString(R.string.dialogDeleteNote), DIALOG_DELETE);
 				dialog.show(getSupportFragmentManager(), "delete");
 				break;
 			case R.id.revertChanges:
-				ConfirmationDialog d = ConfirmationDialog.newInstance(this, getString(R.string.dialogRevertChanges), DIALOG_RESTORE);
+				ConfirmationDialogFragment d = ConfirmationDialogFragment.newInstance(this, getString(R.string.dialogRevertChanges), DIALOG_RESTORE);
 				d.show(getSupportFragmentManager(), "restore");
 				break;
 			case R.id.shareNote:

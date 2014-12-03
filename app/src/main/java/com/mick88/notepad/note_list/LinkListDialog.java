@@ -1,8 +1,5 @@
 package com.mick88.notepad.note_list;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -11,7 +8,10 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
 
-public class PopupLinkList extends SherlockDialogFragment implements OnClickListener
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkListDialog extends SherlockDialogFragment implements OnClickListener
 {
 	public interface LinkListener
 	{

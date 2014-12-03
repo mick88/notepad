@@ -16,8 +16,8 @@ import android.text.TextUtils;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.NotepadApplication;
-import com.mick88.notepad.note_list.PopupLinkList;
-import com.mick88.notepad.note_list.PopupLinkList.LinkListener;
+import com.mick88.notepad.note_list.LinkListDialog;
+import com.mick88.notepad.note_list.LinkListDialog.LinkListener;
 import com.mick88.notepad.R;
 
 /**
@@ -107,7 +107,7 @@ public class Note
 				end = Math.min(end, nlPos);
 			}
 		}
-		return addEllipsis ? s.substring(0, end) + "…" : s.substring(0, end);
+		return addEllipsis ? s.substring(0, end) + "ï¿½" : s.substring(0, end);
 	}
 
 	public String toString()
@@ -133,7 +133,7 @@ public class Note
 	{
 		if (hyperlinks.isEmpty()) return;
 		
-		PopupLinkList dialog = new PopupLinkList();
+		LinkListDialog dialog = new LinkListDialog();
 		dialog.setHyperlinks(this.hyperlinks);
 		dialog.setLinkListener(new LinkListener()
 		{

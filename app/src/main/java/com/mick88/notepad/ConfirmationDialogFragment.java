@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.ContextThemeWrapper;
 
-public class ConfirmationDialog extends DialogFragment
+public class ConfirmationDialogFragment extends DialogFragment
 {
 	Bundle bundle;
 	
@@ -28,12 +28,12 @@ public class ConfirmationDialog extends DialogFragment
 		super.setArguments(bundle);
 	}
 	
-	public ConfirmationDialog()
+	public ConfirmationDialogFragment()
 	{
 		this.bundle=new Bundle();
 	}
 	
-	public static ConfirmationDialog newInstance(Activity activity, String question, int id)
+	public static ConfirmationDialogFragment newInstance(Activity activity, String question, int id)
 	{
 		
 		try
@@ -44,7 +44,7 @@ public class ConfirmationDialog extends DialogFragment
 		{
 			throw new ClassCastException(activity.toString()+" must implement ConfirmationDialogListener");
 		}
-		ConfirmationDialog dialog = new ConfirmationDialog();
+		ConfirmationDialogFragment dialog = new ConfirmationDialogFragment();
 		Bundle bundle = new Bundle();
 		bundle.putInt("dialogId", id);
 		bundle.putString("text", question);
@@ -64,7 +64,7 @@ public class ConfirmationDialog extends DialogFragment
 		{			
 			public void onClick(DialogInterface dialog, int which)
 			{
-				listener.onYesClicked(ConfirmationDialog.this, bundle);
+				listener.onYesClicked(ConfirmationDialogFragment.this, bundle);
 				
 			}
 		});
@@ -73,7 +73,7 @@ public class ConfirmationDialog extends DialogFragment
 			
 			public void onClick(DialogInterface dialog, int which)
 			{
-				listener.onNoClicked(ConfirmationDialog.this, bundle);
+				listener.onNoClicked(ConfirmationDialogFragment.this, bundle);
 				
 			}
 		});
