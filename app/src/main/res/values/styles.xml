@@ -12,6 +12,6 @@
         <item name="android:paddingBottom">5dp</item>
     </style>
     
-    <style name="dialog" parent="@style/Theme.Sherlock.Light.Dialog"></style>
+    <style name="dialog" parent="android:Theme.Dialog"/>
 
 </resources>
