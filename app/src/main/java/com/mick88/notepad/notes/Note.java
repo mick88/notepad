@@ -55,11 +55,6 @@ public class Note
 		return text;
 	}
 
-	public boolean isEmpty()
-	{
-		return text.isEmpty();
-	}
-
 	private void findHyperlinks()
 	{
 		hyperlinks.clear();

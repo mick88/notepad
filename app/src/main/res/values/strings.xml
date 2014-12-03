@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Notepad</string>
     <string name="title_activity_notepad_list">Notepad</string>
     <!-- &#8230; stands for "..." -->
@@ -26,6 +26,6 @@
 	<string name="toastNoteDeleted">Note deleted</string>
 	<string name="toastNoteSaved">Note saved!</string>
 	
-	<string name="toastNoteCopied">Note copied to clipboard</string>
+	<string name="toastNoteCopied" tools:ignore="MissingTranslation">Note copied to clipboard</string>
 	<string name="toastNoteDuplicated">Note duplicated</string>			
 </resources>

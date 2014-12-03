@@ -235,7 +235,7 @@ public class NotepadListActivity extends ActionBarActivity implements
 	private void addTile(Note note, ViewGroup parent, LayoutInflater inflater, Animation inAnimation)
 	{
 		final ViewGroup child = (ViewGroup) inflater.inflate(
-				R.layout.note_list_tile, null);
+				R.layout.note_list_tile, parent, false);
 		noteTiles.put(note, child);
 		TextView tv = (TextView) child.findViewById(R.id.noteTitle);
 		tv.setText(note.getText());
