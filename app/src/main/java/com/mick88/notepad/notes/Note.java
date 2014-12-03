@@ -35,15 +35,15 @@ public class Note
 
 	public Note(NoteManager noteManager) {
 		this.noteManager = noteManager;
-		this.text = new String();
+		this.text = "";
 	}
 
 	public Note(NoteManager noteManager, String content) {
 		this(noteManager);
 		if (content == null)
-			setText(new String());
+			setText("");
 		else
-			setText(new String(content));// text=new String(content);
+			setText(content);
 	}
 
 	public Note(NoteManager noteManager, CharSequence content) {
