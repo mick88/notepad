@@ -3,22 +3,22 @@
  */
 package com.mick88.notepad.notes;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
+
+import com.mick88.notepad.NotepadApplication;
+import com.mick88.notepad.R;
+import com.mick88.notepad.note_list.LinkListDialog;
+import com.mick88.notepad.note_list.LinkListDialog.LinkListener;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import android.content.Context;
-import android.content.Intent;
-import android.text.TextUtils;
-
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.mick88.notepad.NotepadApplication;
-import com.mick88.notepad.note_list.LinkListDialog;
-import com.mick88.notepad.note_list.LinkListDialog.LinkListener;
-import com.mick88.notepad.R;
 
 /**
  * @author Michal
@@ -129,7 +129,7 @@ public class Note
 		}
 	}
 
-	public void popupHyperlinks(final SherlockFragmentActivity activity)
+	public void popupHyperlinks(final ActionBarActivity activity)
 	{
 		if (hyperlinks.isEmpty()) return;
 		

@@ -5,13 +5,12 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
-
-import com.actionbarsherlock.app.SherlockDialogFragment;
+import android.support.v4.app.DialogFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkListDialog extends SherlockDialogFragment implements OnClickListener
+public class LinkListDialog extends DialogFragment implements OnClickListener
 {
 	public interface LinkListener
 	{

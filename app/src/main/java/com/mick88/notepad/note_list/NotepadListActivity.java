@@ -9,11 +9,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.DialogFragment;
+import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -28,7 +30,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ConfirmationDialogFragment;
 import com.mick88.notepad.ConfirmationDialogFragment.ConfirmationDialogListener;
 import com.mick88.notepad.NotepadApplication;
@@ -42,7 +43,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class NotepadListActivity extends SherlockFragmentActivity implements
+public class NotepadListActivity extends ActionBarActivity implements
 		ConfirmationDialogListener, OnGestureListener
 {
 
@@ -315,7 +316,7 @@ public class NotepadListActivity extends SherlockFragmentActivity implements
 	
 	private void implementTileButtons(View container, final Note note)
 	{
-		final SherlockFragmentActivity activity = this;
+		final ActionBarActivity activity = this;
 		
 		container.findViewById(R.id.btn_tile_copy).setOnClickListener(new OnClickListener()
 		{
@@ -416,9 +417,9 @@ public class NotepadListActivity extends SherlockFragmentActivity implements
 	}*/
 
 	@Override
-	public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu)
+	public boolean onCreateOptionsMenu(Menu menu)
 	{
-		getSupportMenuInflater().inflate(R.menu.activity_notepad_list, menu);
+		getMenuInflater().inflate(R.menu.activity_notepad_list, menu);
 		return true;
 	}
 
@@ -488,8 +489,8 @@ public class NotepadListActivity extends SherlockFragmentActivity implements
 
 	}
 
-	public boolean onOptionsItemSelected(
-			com.actionbarsherlock.view.MenuItem item)
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
 	{
 		switch (item.getItemId())
 		{

@@ -1,16 +1,17 @@
 package com.mick88.notepad.note_edit;
 
 import android.annotation.TargetApi;
-import android.app.ActionBar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.ViewConfiguration;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.mick88.notepad.ConfirmationDialogFragment;
 import com.mick88.notepad.NotepadApplication;
 import com.mick88.notepad.R;
@@ -20,7 +21,7 @@ import com.mick88.notepad.notes.NoteManager;
 import java.lang.reflect.Field;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class NoteEditActivity extends SherlockFragmentActivity implements ConfirmationDialogFragment.ConfirmationDialogListener
+public class NoteEditActivity extends ActionBarActivity implements ConfirmationDialogFragment.ConfirmationDialogListener
 {
 	NotepadApplication application;
 	Note currentNote;
@@ -64,18 +65,8 @@ public class NoteEditActivity extends SherlockFragmentActivity implements Confir
 	
 	void setupActionBar()
 	{
-		if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
-		{
-			ActionBar actionBar = getActionBar();
-			actionBar.setDisplayHomeAsUpEnabled(true);
-		}
-		else
-		{
-			com.actionbarsherlock.app.ActionBar actionBar = getSupportActionBar();
-//			actionBar.setHomeButtonEnabled(true);
-			actionBar.setDisplayHomeAsUpEnabled(true);
-		}
-//		showOverflowButton();
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 	
 	
@@ -117,9 +108,9 @@ public class NoteEditActivity extends SherlockFragmentActivity implements Confir
 	}
 	
 	@Override
-	public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu)
+	public boolean onCreateOptionsMenu(Menu menu)
 	{
-		getSupportMenuInflater().inflate(R.menu.note_edit_menu, menu);
+		getMenuInflater().inflate(R.menu.note_edit_menu, menu);
 		return true;
 	}
 	
@@ -129,8 +120,9 @@ public class NoteEditActivity extends SherlockFragmentActivity implements Confir
 		saveOrDelete();
 		super.onBackPressed();
 	}
-	
-	public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item)
+
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item)
 	{
 		switch(item.getItemId())
 		{
