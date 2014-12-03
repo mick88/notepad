@@ -38,15 +38,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:theme="@style/AppTheme">
         </activity>
-        
-        <!-- <receiver android:name="NoteWidgetProvider" android:label="Note">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-            </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
-               android:resource="@xml/notepad_widget" />
-        </receiver> -->
-        
+
         <meta-data android:name="com.google.android.backup.api_key"
     android:value="AEdPqrEAAAAIObyer7czsjFYdiV3XL5bc8fSEb5XpS66uTZeGg" />
     </application>
