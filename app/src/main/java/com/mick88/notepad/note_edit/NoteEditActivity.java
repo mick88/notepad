@@ -143,14 +143,6 @@ public class NoteEditActivity extends ActionBarActivity implements ConfirmationD
 			case R.id.shareNote:
 				saveCurrentNote();
 				currentNote.share(this);
-/*				Intent share = new Intent(android.content.Intent.ACTION_SEND);
-				share.setType("text/plain");
-				
-				share.putExtra(android.content.Intent.EXTRA_TITLE, getString(R.string.shareEntityName));
-				share.putExtra(android.content.Intent.EXTRA_TEXT, textEdit.getText().toString());
-				
-				startActivity(Intent.createChooser(share, getString(R.string.sharePromptText)));*/
-				
 				break;
 			default:
 				return false;

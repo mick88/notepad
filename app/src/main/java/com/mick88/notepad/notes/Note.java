@@ -67,7 +67,6 @@ public class Note
 		for (String word : words)
 		{
 			if (word.startsWith("http://") || word.startsWith("https://") || word.startsWith("www."))
-//			if (word.matches(Patterns.WEB_URL))
 			{
 				if (word.startsWith("www.")) word = "http://"+word;
 				hyperlinks.add(word.trim());
@@ -113,7 +112,6 @@ public class Note
 	public String toString()
 	{
 		return getStart(100, false, false);
-		// text.substring(0, Math.min(100, text.length()));
 	}
 
 	public int getID()
@@ -147,9 +145,6 @@ public class Note
 
 	public void copyToClipboard(NotepadApplication application)
 	{
-		/*android.text.ClipboardManager manager = (android.text.ClipboardManager) application
-				.getSystemService(Context.CLIPBOARD_SERVICE);
-		manager.setText(text);*/
 		application.setClipboardString(text);
 	}
 
@@ -184,13 +179,7 @@ public class Note
 		file.flush();
 		file.close();
 
-		// backupChanges(context);
 	}
-
-	/*
-	 * @Deprecated void backupChanges(Context context) { BackupManager man = new
-	 * BackupManager(context); man.dataChanged(); }
-	 */
 
 	/**
 	 * Loads a note from file

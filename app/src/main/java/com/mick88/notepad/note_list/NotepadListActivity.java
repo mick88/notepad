@@ -378,18 +378,7 @@ public class NotepadListActivity extends ActionBarActivity implements
 				
 				public void onClick(View v)
 				{
-//					List<String> links = note.getHyperlinks();
 					note.popupHyperlinks(activity);
-					/*switch(links.size())
-					{
-						case 0:	break;
-						case 1:
-							application.openLink(links.get(0));
-							break;
-						default:
-							note.popupHyperlinks(activity);
-							break;
-					}			*/		
 				}
 			});
 		}
@@ -403,18 +392,6 @@ public class NotepadListActivity extends ActionBarActivity implements
 			}
 		});
 	}
-/*
-	@Deprecated
-	void updateMenuAvailableItems(Menu menu)
-	{
-		MenuItem menuPaste = menu.findItem(R.id.pasteNote);
-		
-		 * if (android.os.Build.VERSION.SDK_INT >=
-		 * android.os.Build.VERSION_CODES.HONEYCOMB) {
-		 * menuPaste.setVisible(true); } else { menuPaste.setVisible(false); }
-		 
-		menuPaste.setVisible(true);
-	}*/
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
@@ -510,19 +487,6 @@ public class NotepadListActivity extends ActionBarActivity implements
 			{
 				addTile(note);
 			}
-			//loadNotes();
-			/*try
-			{
-				if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
-				{
-					newNoteFromClipboard();
-				} else
-				{
-					newNoteFromClipboardGingerbread();
-				}
-			} catch (Exception e)
-			{
-			}*/
 			break;
 
 		case android.R.id.home:
@@ -594,40 +558,33 @@ public class NotepadListActivity extends ActionBarActivity implements
 
 	public boolean onDown(MotionEvent e)
 	{
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 			float velocityY)
 	{
-		// TODO Auto-generated method stub
-		
 		return false;
 	}
 
 	public void onLongPress(MotionEvent e)
 	{
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
 			float distanceY)
 	{
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	public void onShowPress(MotionEvent e)
 	{
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	public boolean onSingleTapUp(MotionEvent e)
 	{
-		// TODO Auto-generated method stub
 		return false;
 	}
 }
