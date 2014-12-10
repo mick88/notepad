@@ -138,7 +138,7 @@ public class NotepadListActivity extends ActionBarActivity implements
 		v.findViewById(R.id.tile_options).setVisibility(View.GONE);
 		((TextView) v.findViewById(R.id.noteTitle)).setMaxLines(getResources()
 				.getInteger(R.integer.max_tile_lines));
-		((ImageView)v.findViewById(R.id.btn_tile_menu)).setImageResource(R.drawable.icon_dark_expland);
+		((ImageView)v.findViewById(R.id.btn_tile_menu)).setImageResource(R.drawable.icon_dark_expand);
 	}
 
 	void expandNoteTile(Note note)

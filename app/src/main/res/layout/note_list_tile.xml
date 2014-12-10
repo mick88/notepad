@@ -46,8 +46,8 @@
                     android:id="@+id/btn_tile_menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="3dp"
-                    android:src="@drawable/icon_dark_expland" />
+                    android:padding="7dp"
+                    android:src="@drawable/icon_dark_expand" />
             </LinearLayout>
         </RelativeLayout>
 
