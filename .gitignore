@@ -27,3 +27,6 @@ build/
 
 # Misc
 Thumbs.db
+
+#rendered icons
+icons/*.png
