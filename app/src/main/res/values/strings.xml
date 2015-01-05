@@ -26,6 +26,6 @@
 	<string name="toastNoteDeleted">Note deleted</string>
 	<string name="toastNoteSaved">Note saved!</string>
 	
-	<string name="toastNoteCopied" tools:ignore="MissingTranslation">Note copied to clipboard</string>
+	<string name="toastNoteCopied">Note copied to clipboard</string>
 	<string name="toastNoteDuplicated">Note duplicated</string>			
 </resources>

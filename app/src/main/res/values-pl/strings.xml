@@ -24,4 +24,6 @@
 	<string name="sharePromptText">Wyślij notatkę</string>
 	<string name="toastNoteDeleted">Notatka usunięta</string>
 	<string name="toastNoteSaved">Notatka zapisana!</string>
+    <string name="toastNoteCopied">Notatka skopiowana do schowka</string>
+    <string name="toastNoteDuplicated">Notatka skopiowana</string>
 </resources>
