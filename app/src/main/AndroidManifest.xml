@@ -1,42 +1,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mick88.notepad"
-    android:versionCode="9"
-    android:versionName="3.0"
-    android:installLocation="auto">
+	package="com.mick88.notepad"
+	android:installLocation="auto">
 
-    <application
-        android:name="com.mick88.notepad.NotepadApplication"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:allowBackup="true"
-        android:allowClearUserData="true">
-        <activity
-            android:name=".note_list.NotepadListActivity"
-            android:label="@string/title_activity_notepad_list"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:theme="@style/AppTheme"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter >
-            	<action android:name="android.intent.action.SEND" />
-            	<category android:name="android.intent.category.DEFAULT" />
-            	<data android:mimeType="text/*" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".note_edit.NoteEditActivity"
-            android:label="@string/titleEditNote" 
-            android:windowSoftInputMode="stateVisible"
-            android:configChanges="keyboard|keyboardHidden|orientation"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <meta-data android:name="com.google.android.backup.api_key"
-    android:value="AEdPqrEAAAAIObyer7czsjFYdiV3XL5bc8fSEb5XpS66uTZeGg" />
-    </application>
+	<application
+		android:name="com.mick88.notepad.NotepadApplication"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:allowBackup="true"
+		android:allowClearUserData="true"
+		android:supportsRtl="false">
+		<activity
+			android:name=".note_list.NotepadListActivity"
+			android:label="@string/title_activity_notepad_list"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+			android:theme="@style/AppTheme"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter >
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/*" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".note_edit.NoteEditActivity"
+			android:label="@string/titleEditNote" 
+			android:windowSoftInputMode="stateVisible"
+			android:configChanges="keyboard|keyboardHidden|orientation"
+			android:theme="@style/AppTheme">
+		</activity>
+	</application>
 
 </manifest>
