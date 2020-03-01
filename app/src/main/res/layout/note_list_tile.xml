@@ -12,7 +12,7 @@
         android:animateLayoutChanges="true"
         android:background="@drawable/tile_selector"
         android:clickable="true"
-        android:orientation="vertical" >
+        android:focusable="true" android:orientation="vertical" >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -23,21 +23,20 @@
                 android:id="@+id/noteTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_margin="@dimen/tile_padding"
-                android:layout_toLeftOf="@+id/btn_tile_expand"
+                android:layout_toStartOf="@+id/btn_tile_expand"
                 android:ellipsize="end"
                 android:maxLines="@integer/max_tile_lines"
-                android:singleLine="false"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed magna arcu. Pellentesque rutrum arcu in elit pellentesque eget convallis neque convallis. Morbi mauris risus, feugiat et scelerisque et, auctor et neque. Aliquam erat volutpat. Nam venenatis tincidunt risus elementum adipiscing. Curabitur nec lorem nunc. Nulla facilisi. Sed aliquet lobortis condimentum. Nunc interdum magna eleifend lectus rhoncus et faucibus lorem ullamcorper. Donec eu nunc vel ante luctus lobortis. Aliquam sapien ante, dignissim sed commodo non, accumsan non massa. Aliquam luctus, est vel lobortis interdum, odio mauris adipiscing sem, ac placerat neque nibh eu justo. Nulla feugiat magna ut risus faucibus adipiscing. Ut ac metus et nulla dapibus faucibus. Ut ut justo quis nisl venenatis consectetur quis at massa. Maecenas hendrerit tincidunt arcu non sagittis. Aliquam justo ligula, porttitor ac vulputate quis, lobortis ut libero. Quisque eu adipiscing tellus. Aliquam rutrum dolor eget enim aliquam non pharetra justo euismod. Ut varius bibendum facilisis. "
+                android:text="..."
                 android:textColor="@color/tile_text" />
 
             <LinearLayout
                 android:id="@+id/btn_tile_expand"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/click_selector"
                 android:gravity="top" >
@@ -46,7 +45,7 @@
                     android:id="@+id/btn_tile_menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="7dp"
+                    android:contentDescription="TODO" android:padding="7dp"
                     android:src="@drawable/icon_dark_expand" />
             </LinearLayout>
         </RelativeLayout>
@@ -55,8 +54,8 @@
             android:id="@+id/tile_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:gravity="right"
+            android:layout_gravity="end"
+            android:gravity="end"
             android:visibility="gone" >
 
             <ImageView
@@ -66,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:contentDescription="Hyperlinks"
-                android:src="@drawable/icon_dark_web" />
+                android:focusable="true" android:src="@drawable/icon_dark_web" />
 
             <ImageView
                 android:id="@+id/btn_tile_delete"
@@ -75,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:contentDescription="@string/deleteNote"
-                android:src="@drawable/icon_dark_delete" />
+                android:focusable="true" android:src="@drawable/icon_dark_delete" />
 
             <ImageView
                 android:id="@+id/btn_tile_share"
@@ -84,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:contentDescription="@string/share"
-                android:src="@drawable/icon_dark_share" />
+                android:focusable="true" android:src="@drawable/icon_dark_share" />
 
             <ImageView
                 android:id="@+id/btn_tile_copy"
@@ -93,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:contentDescription="Copy to clipboard"
-                android:src="@drawable/icon_dark_copy" />
+                android:focusable="true" android:src="@drawable/icon_dark_copy" />
         </LinearLayout>
     </LinearLayout>
 

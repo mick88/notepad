@@ -12,6 +12,7 @@
         <item name="android:paddingBottom">5dp</item>
     </style>
     
-    <style name="dialog" parent="android:Theme.Dialog"/>
+		<!-- <style name="dialog" parent="android:Theme.Dialog"/> -->
+    <style name="dialog" parent="android:Theme.Holo.Light.Dialog"/>
 
 </resources>

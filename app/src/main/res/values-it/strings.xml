@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="contextDelete">Elimina</string>
+    <string name="contextDuplicate">Duplica</string>
+    <string name="contextEdit">Modifica</string>
+    <string name="deleteNote">Elimina</string>
+    <string name="dialogDeleteNote">Elimina nota?</string>
+    <string name="dialogDeleteSelected">Elimina nota?</string>
+    <string name="dialogRevertChanges">Annulla cambiamenti?</string>
+    <string name="listEmpty">Nessuna nota</string>
+    <string name="newPaste">Incolla</string>
+    <string name="revertChanges">Rispristina</string>
+    <string name="saveNote">Salva</string>
+    <string name="share">Condividi</string>
+    <string name="shareEntityName">Nota</string>
+    <string name="sharePromptText">Condividi</string>
+    <string name="titleEditNote">Modifica</string>
+    <string name="title_activity_notepad_list">Notepad</string>
+    <string name="toastAlreadyPasted">Nota già aggiunta</string>
+    <string name="toastClipboardEmpty">Appunti non trovati</string>
+    <string name="toastClipboardNotText">Appunti non di testo</string>
+    <string name="toastNoteCopied">Nota copiata</string>
+    <string name="toastNoteDeleted">Nota eliminata</string>
+    <string name="toastNoteDuplicated">Nota duplicata</string>
+    <string name="toastNoteSaved">Nota salvata</string>
+</resources>

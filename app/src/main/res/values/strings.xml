@@ -2,11 +2,9 @@
     <string name="app_name">Notepad</string>
     <string name="title_activity_notepad_list">Notepad</string>
     <!-- &#8230; stands for "..." -->
-    <string name="titleEditNote">Edit note&#8230;</string> 
-    <string name="menu_insert">Create note</string>
-    <string name="newNote">Create note</string>
+    <string name="titleEditNote">Edit note&#8230;</string>
+    <string name="newNote" translatable="false">New note</string>
     <string name="saveNote">Save</string>
-    <string name="sampleItem">Sample item</string>
     <string name="deleteNote">Delete</string>
     <string name="revertChanges">Revert changes</string>
     <string name="listEmpty">List is empty</string>
