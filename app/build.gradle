@@ -8,8 +8,7 @@ android {
 		targetSdkVersion 29
         versionCode 10029
         versionName "1.0.0"
-		//
-		resConfigs "en", "it"
+		//resConfigs "en", "it"
 	}
 	buildTypes {
 		release {
