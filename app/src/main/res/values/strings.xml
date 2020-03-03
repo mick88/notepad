@@ -1,21 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Notepad</string>
-    <string name="title_activity_notepad_list">Notepad</string>
-    <!-- &#8230; stands for "..." -->
-    <string name="titleEditNote">Edit note&#8230;</string>
-    <string name="newNote" translatable="false">New note</string>
-    <string name="saveNote">Save</string>
-    <string name="deleteNote">Delete</string>
-    <string name="revertChanges">Revert changes</string>
-    <string name="listEmpty">List is empty</string>
-    <string name="share">Share</string>
-    <string name="newPaste">Paste from clipboard</string>
-    <string name="contextEdit">Edit note</string>
-    <string name="contextDelete">Delete</string>
-    <string name="contextDuplicate">Duplicate</string>
-    <string name="dialogDeleteNote">Delete note?</string>
-    <string name="dialogRevertChanges">Revert all changes since last save?</string>
-    <string name="dialogDeleteSelected">Delete selected note?</string>
+	<string name="app_name">Notepad</string>
+	<string name="title_activity_notepad_list">Notepad</string>
+	<!-- &#8230; stands for "..." -->
+	<string name="titleEditNote">Edit note&#8230;</string>
+	<string name="newNote" translatable="false">New note</string>
+	<string name="saveNote">Save</string>
+	<string name="deleteNote">Delete</string>
+	<string name="revertChanges">Revert changes</string>
+	<string name="listEmpty">List is empty</string>
+	<string name="share">Share</string>
+	<string name="newPaste">Paste from clipboard</string>
+	<string name="contextEdit">Edit note</string>
+	<string name="contextDelete">Delete</string>
+	<string name="contextDuplicate">Duplicate</string>
+	<string name="dialogDeleteNote">Delete note?</string>
+	<string name="dialogRevertChanges">Revert all changes since last save?</string>
+	<string name="dialogDeleteSelected">Delete selected note?</string>
 	<string name="toastAlreadyPasted">Note with this content already pasted</string>
 	<string name="toastClipboardNotText">Clipboard data is not in text format</string>
 	<string name="toastClipboardEmpty">Clipboard is empty</string>
@@ -23,7 +23,6 @@
 	<string name="sharePromptText">Share note</string>
 	<string name="toastNoteDeleted">Note deleted</string>
 	<string name="toastNoteSaved">Note saved!</string>
-	
 	<string name="toastNoteCopied">Note copied to clipboard</string>
-	<string name="toastNoteDuplicated">Note duplicated</string>			
+	<string name="toastNoteDuplicated">Note duplicated</string>
 </resources>
